@@ -1,0 +1,10 @@
+Recommended battery protection circuitry:
+
+- Inline Fuse
+- Battery protection IC
+- Thermistor for charge controller
+- Charge controller should have ability to detect source type and set current limits based on it
+
+Notes:
+Select correct chip for battery, 4.1V or 4.2V, VERY IMPORTANT
+Make sure to set the CC to 0.5C of the selected battery (or whatever battery manufacturer recommends). Also check that the select IC is capable of this.
