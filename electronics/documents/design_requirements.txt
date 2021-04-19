@@ -1,0 +1,19 @@
+Solution Description:
+
+In simple terms, the solution will track the 3D position of a sailplane glider in the air in close to real time.
+This information will be reported to somewhere it can be displayed, likely a dashboarding system or map.
+
+
+Design Requirements:
+
+The solution should be/have,
+ - Battery powered
+ - Long battery life to operate over long flights
+ - Rechargable through modern charging solutions (phone chargers and the like)
+ - Small form factor, should fit in glider pouch
+ - Able to report data reliably from anywhere a glider could be reasonably expected to fly (within Australia for now)
+ - Accurate positioning, 50 meters or less in 3D space
+ - Near realtime reporting of position
+ - Continuous updates of data (position, battery voltage, etc. once per sec or less)
+ - Display basic status information (battery level, connection status, etc)
+ - Report data over the internet, so that it may be used to create visualations
