@@ -1,7 +1,8 @@
 Solution Description:
 
 In simple terms, the solution will track the 3D position of a sailplane glider in the air in close to real time.
-This information will be reported to somewhere it can be displayed, likely a dashboarding system or map.
+This information will be reported to somewhere it can be displayed, likely a dashboarding system or map. The solution
+must be rechargable and be able to last for the duration of a "long" glider flight (4hrs+).
 
 
 Design Requirements:
