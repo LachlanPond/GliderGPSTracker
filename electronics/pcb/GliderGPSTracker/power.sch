@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "POWER"
 Date ""
 Rev "1.0"
@@ -2573,36 +2573,13 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1600 20
 	1    1450 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 6094CFBA
-P 2450 2400
-AR Path="/6094CFBA" Ref="R?"  Part="1" 
-AR Path="/6090E0C9/6094CFBA" Ref="R?"  Part="1" 
-F 0 "R?" V 2550 2450 50  0000 C CNN
-F 1 "5K1" V 2550 2300 50  0000 C CNN
-F 2 "" V 2380 2400 50  0001 C CNN
-F 3 "~" H 2450 2400 50  0001 C CNN
-	1    2450 2400
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2050 1700 2450 1700
-Wire Wire Line
-	2450 1700 2450 2250
-Wire Wire Line
-	2450 2550 2450 3500
-Wire Wire Line
-	2450 3500 3050 3500
 Connection ~ 3050 3500
 Text GLabel 2450 1700 2    50   Output ~ 0
 DETECT_CC2
 NoConn ~ 2050 2500
 NoConn ~ 2050 2600
-NoConn ~ 2050 2200
-NoConn ~ 2050 2100
-NoConn ~ 2050 2000
-NoConn ~ 2050 1900
 Text Notes 2600 1250 0    50   ~ 0
 VOLTAGE ON CC1 AND CC2 USED TO DETERMINE\nCHARGE CURRENT. ONLY ONE WILL PRESENT VOLTAGE\n<700mV = UP TO 500mA\n>700mV = UP TO 1.5A
 Text Notes 950  3900 0    50   ~ 10
@@ -3052,4 +3029,63 @@ Wire Notes Line
 	10600 4250 6200 4250
 Text Notes 6200 6300 0    50   ~ 10
 POWER REGULATOR
+Wire Wire Line
+	2050 2100 2050 2200
+Connection ~ 2050 2200
+Wire Wire Line
+	2050 1900 2050 2000
+Connection ~ 2050 2000
+Wire Wire Line
+	2050 2200 2100 2200
+Wire Wire Line
+	2050 2000 2200 2000
+Wire Wire Line
+	2100 2200 2100 2800
+Wire Wire Line
+	2200 2000 2200 2800
+Connection ~ 2450 3500
+Wire Wire Line
+	2300 3500 2450 3500
+Wire Wire Line
+	2450 2800 2450 3150
+Wire Wire Line
+	2300 2800 2450 2800
+Wire Wire Line
+	2450 3150 2450 3500
+Connection ~ 2450 3150
+$Comp
+L GliderGPSLibrary:VBUS052CD-FAH U?
+U 1 1 60CF3EBE
+P 2200 3150
+F 0 "U?" V 2200 3350 50  0000 L CNN
+F 1 "VBUS052CD-FAH" V 2650 2900 50  0000 L CNN
+F 2 "" H 2200 2500 50  0001 C CNN
+F 3 "" H 2200 2500 50  0001 C CNN
+	1    2200 3150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2450 3500 3050 3500
+Connection ~ 2450 2800
+Wire Wire Line
+	2450 2550 2450 2800
+Wire Wire Line
+	2450 1700 2450 2250
+$Comp
+L Device:R R?
+U 1 1 6094CFBA
+P 2450 2400
+AR Path="/6094CFBA" Ref="R?"  Part="1" 
+AR Path="/6090E0C9/6094CFBA" Ref="R?"  Part="1" 
+F 0 "R?" V 2550 2450 50  0000 C CNN
+F 1 "5K1" V 2550 2300 50  0000 C CNN
+F 2 "" V 2380 2400 50  0001 C CNN
+F 3 "~" H 2450 2400 50  0001 C CNN
+	1    2450 2400
+	1    0    0    1   
+$EndComp
+Text HLabel 2200 2000 2    50   BiDi ~ 0
+D-
+Text HLabel 2100 2300 0    50   BiDi ~ 0
+D+
 $EndSCHEMATC

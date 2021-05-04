@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "GLIDER GPS TRACKER"
 Date ""
 Rev "1.0"
@@ -24,5 +24,11 @@ S 4300 1550 2350 1250
 U 608FF5E2
 F0 "SIM7000E" 50
 F1 "SIM7000E.sch" 50
+$EndSheet
+$Sheet
+S 2700 4100 1650 1100
+U 60CDF4B0
+F0 "Controller" 50
+F1 "controller.sch" 50
 $EndSheet
 $EndSCHEMATC

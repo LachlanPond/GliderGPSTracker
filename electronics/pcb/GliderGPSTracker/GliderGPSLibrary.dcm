@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP SIM7000E
-D SIMCom SIM7000 module. LET CAT-M1 mobile network interface module 
+D SIMCom SIM7000 module. LET CAT-M1 mobile network interface module
 K SIM7000
 F https://simcom.ee/documents/SIM7000E/SIM7000%20Hardware%20Design_V1.05.pdf
 $ENDCMP
